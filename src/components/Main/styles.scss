@@ -1,0 +1,68 @@
+main {
+  background-image: url("../../assets/bg-palacio.png");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.875rem;
+  color: var(--font-white);
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+img {
+  max-width: 550px;
+  width: 100%;
+}
+
+button {
+  background-color: var(--bg-blue);
+  color: var(--font-white);
+  height: 10vh;
+  width: 400px;
+  border-radius: 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  bottom: 40px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  img {
+    max-width: 80%;
+  }
+
+  button {
+    background-color: var(--bg-pink);
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  button {
+    background-color: var(--bg-pink);
+    width: 70%;
+  }
+}
